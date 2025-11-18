@@ -5,76 +5,81 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
-<header>
-    <a href="">
-        <img src="./assets/images/logo.svg" alt="">
+<header class="header">
+    <a href="" class="logo">
+        <img class="logo-img" src="./assets/images/logo.svg" alt="">
     </a>
-    <ul>
-
-        <li>
+    <ul class="menu">
+        <li class="menu-item">
             <a href="">Main</a>
         </li>
-        <li><a href="">Rates</a>
+        <li class="menu-item">
+            <a href="">Rates</a>
         </li>
-        <li><a href="">Create Account</a>
+        <li class="menu-item">
+            <a href="">Create Account</a>
         </li>
     </ul>
 </header>
-<section>
-    <h1>Markup achievement</h1>
-    <p> The harper you work for something, the greater you'll feel when you achieve it.</p>
-    <button>Learn More</button>
-    <img src="./assets/images/image.png" alt=""/>
+<section class="main">
+    <h1 class="main-title">Markup achievement</h1>
+    <p class="text"> The harper you work for something, the greater you'll feel when you achieve it.</p>
+    <button class="btn">Learn More</button>
+    <img class="main-img" src="./assets/images/image.png" alt=""/>
 </section>
-<section>
-    <h2>Rates</h2>
-    <p>Failure will  never overtake me if my determination to succeed is strong enough</p>
-    <table>
+<section class="rates-section">
+    <h2 class="title">Rates</h2>
+    <p class="text">Failure will  never overtake me if my determination to succeed is strong enough</p>
+    <table class="table">
         <tr>
-            <th>Features</th>
-            <th>Standart</th>
-            <th>Plus</th>
-            <th>PRO</th>
+            <th class="table-subtitle gray">Features</th>
+            <th class="table-title">Standart</th>
+            <th class="table-title">Plus</th>
+            <th class="table-title">PRO</th>
         </tr>
         <tr>
-            <th>Theory</th>
-            <th><img src="./assets/images/Check.svg"  alt=""></th>
-            <th><img src="./assets/images/Check.svg"  alt=""></th>
-            <th><img src="./assets/images/Check.svg"  alt=""></th>
+            <th class="table-subtitle">Theory</th>
+            <td class="table-link"><img src="./assets/images/Check.svg"  alt=""></td>
+            <td class="table-link"><img src="./assets/images/Check.svg"  alt=""></td>
+            <td class="table-link"><img src="./assets/images/Check.svg"  alt=""></td>
         </tr>
         <tr>
-            <th>Practice</th>
-            <th><img src="./assets/images/Close.svg"  alt=""></th>
-            <th><img src="./assets/images/Check.svg"  alt=""></th>
-            <th><img src="./assets/images/Check.svg"  alt=""></th>
+            <th class="table-subtitle">Practice</th>
+            <td class="table-link"><img src="./assets/images/Close.svg"  alt=""></td>
+            <td class="table-link"><img src="./assets/images/Check.svg"  alt=""></td>
+            <td class="table-link"><img src="./assets/images/Check.svg"  alt=""></td>
         </tr>
         <tr>
-            <th>Code rewiew</th>
-            <th><img src="./assets/images/Close.svg"  alt=""></th>
-            <th><img src="./assets/images/Close.svg"  alt=""></th>
-            <th><img src="./assets/images/Check.svg"  alt=""></th>
+            <th class="table-subtitle">Code rewiew</th>
+            <td class="table-link"><img src="./assets/images/Close.svg"  alt=""></td>
+            <td class="table-link"><img src="./assets/images/Close.svg"  alt=""></td>
+            <td class="table-link"><img src="./assets/images/Check.svg"  alt=""></td>
         </tr>
-        <tr>
-            <th><a href="">Have questions?</a> </th>
-            <th>get now</th>
-            <th>get now</th>
-            <th>get now</th>
+        <tr class= "table-footer">
+            <th class="table-subtitle"><a href="" class="table-link">Have questions?</a> </th>
+            <td class="table-btn">get now</td>
+            <td class="table-btn active">get now</td>
+            <td class="table-btn">get now</td>
         </tr>
     </table>
 </section>
-<section>
-    <h2>Create your free account </h2>
-    <p>Let us first talk  about dreams. We all know that dreams do play a role  in our daily lives. The majority of people attention to dreams.
+<section class="create-account-section">
+    <h2 class="title">Create your free account </h2>
+    <p class="text">Let us first talk  about dreams. We all know that dreams do play a role  in our daily lives. The majority of people attention to dreams.
         Dreams can help us find solutions to our daily problems and see thing from a different  perspective.
         Whenever we are dreaming,we can be who or  what to be, regardless of the fact that in real life</p>
-    <ul>
-        <li>Easy setup,fast start</li>
-        <li>Free forever for core features</li>
-        <li>14-day trial  of premium  features</li>
+    <ul class="list">
+        <li class="list-item">Easy setup,fast start</li>
+        <li class="list-item">Free forever for core features</li>
+        <li class="list-item">14-day trial  of premium  features</li>
     </ul>
     <form action="">
         <input type="text" placeholder="Full Name*">
@@ -87,14 +92,16 @@
             <option>China</option>
             <option>USA</option>
         </select>
-        <label for="front">
-            <input id="front" type="radio"  name="stack" checked>
-            Frontend
-        </label>
-        <label for="back">
-            <input id="back"     type="radio" name="stack" >
-           Backend
-        </label>
+       <div>
+           <label for="front">
+           <input id="front" type="radio"  name="stack" checked>
+           Frontend
+       </label>
+           <label for="back">
+               <input id="back"     type="radio" name="stack" >
+               Backend
+           </label>
+       </div>
         <fieldset>
             <legend>Favorite  Technologies</legend>
             <label for="html">
@@ -118,7 +125,7 @@
         <input type="submit">
     </form>
 </section>
-<footer>
+<footer class="footer">
     <small>Copyright © 2025. All rights reserved</small>
 <!--    <small>Copyright © 2025. All rights reserved</small>-->
 </footer>
